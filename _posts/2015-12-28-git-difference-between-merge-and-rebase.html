@@ -1,0 +1,97 @@
+---
+layout: post
+title:  "Git - Difference between merge and rebase"
+date:   2015-12-28 22:31:56 +0200
+---
+
+Let's go back to basics: Git.
+
+This powerful versioning tool is hugely underestimated by newcomers because "<em>Oh jeez it's so hard to understand what's the difference between <code>git pull origin master</code> and <code>git merge origin/master</code>, and what the hell is this slash in the middle</em>"?
+
+Yeah, just trolling, but actually there's something awesome we can do and that's very simple "in the end": rebasing.
+
+<!--more-->
+
+Start from here.
+
+<pre>* 33facc8  (master) Commit 3
+|
+| * 3b36f32  (second_branch) Detached commit
+| |
+|/
+* 29af11f  Commit 2
+|
+* 1439f8e  Commit 1
+</pre>
+
+<strong>We will work on branch <code>second_branch</code></strong>, which is created based on a previous version of the <code>master</code> branch. The <code>second_branch</code> has one commit more than <code>master</code>. But, between now and when I created the branch, someone commited on <code>master</code>.
+
+Our branches diverge.
+
+<strong>Problem:</strong> I need the modifications from <code>Commit 3</code> to work on my branch (or my lead developer wants me to always keep my working directory up to date with the <code>master</code>).
+
+Two possibilities here:
+
+<ul>
+   <li>Use <code>merge</code> (or <code>pull</code> for the lazy ones).</li>
+   <li>Use <code>rebase</code>.</li>
+</ul>
+
+<p class="alert alert-info">Reminder: we work on <code>second_branch</code>. It means we previously ran a <code>git checkout second_branch</code> command.</p>
+
+<section class="row"><aside class="col-sm-6">
+<h3>Result of a <code>git merge master</code></h3>
+<pre>*   63c6403  (master) Merge "second_branch" in "master"
+|\
+| |
+* | 33facc8 Commit 3
+| |
+| * 3b36f32  (second_branch) Detached commit
+| |
+|/
+* 29af11f  Commit 2
+|
+* 1439f8e  Commit 1</pre>
+As the branches diverge, we cannot <code>fast-forward</code> (<a href="https://confluence.atlassian.com/bitbucket/git-fast-forwards-and-branch-management-329977726.html">a good doc about fast-forward</a>, by Atlassian guys) the process of merging, so Git creates what we call a <strong>merge commit</strong> to apply all modifications of the <code>master</code> branch into the <code>second_branch</code>.
+
+It creates a new ugly edge to the git graph.
+
+BUT, it keeps consistency with all commits because they don't change.
+
+<strong>Note:</strong> Something that's cool with this is that if you remove only the merge commit (number <code>63c6403</code> in our case) from the tree (with a <code>rebase -i</code> or a <code>reset</code>), then all the commits from the branch that was merged are also detached from the branch.
+This allows very easy rollback when you have to merge tons of commits from a branch and that it does not satisfy the needs and you have to remove them: simply remove the merge commit and it's done.
+
+</aside><aside class="col-sm-6">
+<h3>Result of a <code>git rebase master</code></h3>
+<pre>* a018520  (HEAD -&gt; second_branch) Detached commit
+|
+* 33facc8  (master) Commit 3
+|
+* 29af11f  Commit 2
+|
+* 1439f8e  Commit 1</pre>
+The previous <code>HEAD</code>(pointer to the last commit of the currently selected branch) of my <code>second_branch</code> was <strong>"Commit 2"</strong>, and by running <code>git rebase</code>, I want this <code>HEAD</code> to be the same as the <code>master</code> branch, so branches are identical <strong>at first</strong>, and then come my new commits from <code>second_branch</code>.
+It creates a very beautiful and linear tree.
+BUT, the tree changes, because the base hash for <code>Detached commit</code> (in the <code>second_branch</code>) was <code>3b36f32</code> at first, and has changed to <code>a018520</code> after rebasing. It means that if somebody was using the <code>second_branch</code>, it will be very tricky for him to retrieve the entire new <code>second_branch</code> because its tree has changed completely.
+
+It's a bit complex, I admit, but actually it's changing the old "base commit" for this branch to the "new" base.
+
+If you need to have a better representation, you can <a href="http://images.lmgtfy.com/?q=git+rebase">take a look on google images for some graphs of git rebase</a>. It's pretty cool.
+
+</aside></section>
+
+<h2>Summary</h2>
+
+<dl class="dl-horizontal">
+   <dt>git merge {branch}</dt>
+   <dd>Applies modifications of the <code>{branch}</code> branch to the current branch, and if branches diverge (or <code>--no-ff</code> is specified), it will create a new "merge commit" indicating that the two branches were merged.</dd>
+   <dt><code>rebase {branch}</code></dt>
+   <dd>Rewrites the current branch history . At first, it keeps all "new commits" of the current branch (starting from head) in memory, then applies all "missing" commits from the {branch} (which should inexorably fast-forward), and finally applies all kept-in-memory commits' modifications from the current branch, one-by-one, until every conflict (if there are some) is resolved, and changes the new commits' hashes.</dd>
+</dl>
+
+And rebasing is just one component of Git.
+Just look at <a href="https://git-scm.com/docs/git-for-each-ref" target="_blank" rel="noopener noreferrer">for-each-ref</a> command, or even <a href="https://git-scm.com/docs/git-log" target="_blank" rel="noopener noreferrer">log</a>, you can do beautiful things with them!
+
+<br>
+
+<img class="aligncenter size-full wp-image-108" src="/img/git_merge_vs_rebase.jpg" alt="Git merge vs rebase">
