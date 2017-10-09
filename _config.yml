@@ -29,6 +29,9 @@ theme: minima
 plugins:
     - jekyll-feed
 
+feed:
+    path: feed.xml
+
 defaults:
     - scope:
           path: 'img/'
