@@ -1,8 +1,7 @@
-
 ---
 layout: post
-title:  "[PHP Basics] Functions and methods prototypes"
-date:   2017/10/25 11:29:57 +0200
+title:  '[PHP Basics] Functions and methods prototypes'
+date:   2017-10-25 11:29:57 +0200
 ---
 
 A PHP function is made of three things:
