@@ -49,7 +49,6 @@ We can only do `return;` with this type.
 But nothing prevents doing such things: 
 
 ```php
-
 function test(): void {
     echo "ok";
     

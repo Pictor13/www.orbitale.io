@@ -11,12 +11,12 @@ if !title
 end
 
 date_simple = Time.now.strftime("%Y-%m-%d")
-date_full = Time.now.strftime("%Y/%m/%d %H:%M:%S %z")
+date_full = Time.now.strftime("%Y-%m-%d %H:%M:%S %z")
 
-template = """
+template = """\
 ---
 layout: post
-title:  \"#{title}\"
+title:  '#{title}'
 date:   #{date_full}
 ---
 
