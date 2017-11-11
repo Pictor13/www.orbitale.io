@@ -27,9 +27,9 @@ In my case, I'm using [Apache Lounge](https://www.apachelounge.com) which is a s
 Then, I download [PHP for Windows](http://windows.php.net/download/) on [windows.php.net](http://windows.php.net), which
 can be installed wherever I want.
 
-> ⚡⚠ Warning: For `mod_php`, you need the **thread safe (`ts`)** version of PHP.<br>
-> When we'll install our FastCGI setup, you will have to download PHP again with the **non-thread-safe (`nts`)** version.<br>
-> I personally have both versions installed in `php-ts` and `php-nts` directories in my computer, in case of.
+⚡⚠ Warning: For `mod_php`, you need the **thread safe (`ts`)** version of PHP.<br>
+When we'll install our FastCGI setup, you will have to download PHP again with the **non-thread-safe (`nts`)** version.<br>
+I personally have both versions installed in `php-ts` and `php-nts` directories in my computer, in case of.
 
 I also download a windows version of MariaDB and PostgreSQL for my apps, but it's not the subject.
 
