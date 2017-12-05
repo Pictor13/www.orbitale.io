@@ -188,7 +188,7 @@ So, download this small executable, run `nssm add`, and a cool popup will show.
 
 You'll fill a few options:
 
-![/img/nssm_app.jpg](NSSM options) 
+![NSSM options](/img/nssm_app.jpg) 
 
 Just an explanation about the options:
 
