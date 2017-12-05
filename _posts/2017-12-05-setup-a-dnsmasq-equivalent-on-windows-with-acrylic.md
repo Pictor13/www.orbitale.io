@@ -15,7 +15,8 @@ It's as simple as `dnsmasq`, so let's spread the word!
 
 ## Install Acrylic DNS Proxy Home Page
 
-Current link to Acrylic is the following: http://mayakron.altervista.org/wikibase/show.php?id=AcrylicHome
+Current link to Acrylic is the following:
+[http://mayakron.altervista.org/wikibase/show.php?id=AcrylicHome](http://mayakron.altervista.org/wikibase/show.php?id=AcrylicHome)
 
 For any dead link, please contact me so I can update one (or warn if the software is unavailable).
 
