@@ -184,7 +184,7 @@ So I'm using [NSSM](https://nssm.cc) to manage my personal services.
 
 It's great because I've set up PHP-CGI, Apache, MariaDB and Blackfire Agent with it, and it's lovely.
 
-So, download this small executable, run `nssm add`, and a cool popup will show.
+So, download this small executable, run `nssm install`, and a cool popup will show.
 
 You'll fill a few options:
 
