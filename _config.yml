@@ -29,6 +29,8 @@ theme: minima
 plugins:
     - jekyll-feed
 
+google_analytics: UA-43812649-3
+
 feed:
     path: feed.xml
 
