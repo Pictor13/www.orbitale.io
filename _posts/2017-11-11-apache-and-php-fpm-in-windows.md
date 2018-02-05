@@ -245,7 +245,7 @@ Then, you will have to **remove the `SetHandler` config from `httpd.conf`** and 
 
 That's it, now you can enjoy having multiple PHP versions!
 
-⚠️ If you're using Apache 2.4.26+, you **must** specify this directive.
+⚠️ If you're using Apache 2.4.25+, you **must** specify this directive.
 
 ```apacheconfig
 ProxyFCGIBackendType GENERIC
