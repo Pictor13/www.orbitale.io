@@ -244,3 +244,16 @@ Then, you will have to **remove the `SetHandler` config from `httpd.conf`** and 
 ```
 
 That's it, now you can enjoy having multiple PHP versions!
+
+⚠️ If you're using Apache 2.4.26+, you **must** specify this directive.
+
+```apacheconfig
+ProxyFCGIBackendType GENERIC
+```
+
+Only necessary for Apache 2.4.26 and higher versions, because this release introduced a new behavior in the FCGI 
+protocol handled by the `mod_proxy_fcgi` module.<br>
+If you don't specify this directive, you will encounter a `No input file specified.` error, because it's related to some
+`proxy:fcgi://` string that's passed to PHP that is not interpreted correctly.
+
+This behavior is not needed when using Apache + php-fpm, because we can rely on a unix socket.
