@@ -130,7 +130,7 @@ using this protocol. But we could have been using other protocols for other need
 When FastCGI proxy is enabled, let's tell Apache we want to use our PHP config:
 
 ```apacheconfig
-<Files ~ "\.(php|phtml)$">
+<Files ~ "\.php$">
     SetHandler "proxy:fcgi://127.0.0.1:9000#"
 </Files>
 ```
