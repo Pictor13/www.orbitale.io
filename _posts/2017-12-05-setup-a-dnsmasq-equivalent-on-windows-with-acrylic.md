@@ -4,6 +4,16 @@ title:  'Setup a dnsmasq equivalent on Windows (with Acrylic)'
 date:   2017-12-05 15:37:59 +0100
 ---
 
+Last modified: {{ page.last_modified_at | date: '%A %d %B %Y at %R' }}
+
+Edit (2018-08-27): I stopped using Acrylic, it was quite unstable and was not working well. I probably messed up
+something in the configuration and I ended up using the `C:\Windows\System32\drivers\etc\hosts` file…<br>
+The problem I had was that the DNS worked for my own domains but it did not for **all** others. I could not even open
+[github.com](https://github.com)…<br>
+If you have any idea on how to make it work 100% times, please send an e-mail!
+
+---
+
 There are **a lot** of searches about a "Windows `dnsmasq` equivalent" on the web.
 
 Actually, it's a problem only because doesn't have a "publicly configurable DNS local resolution" system. But in fact,
