@@ -4,10 +4,6 @@ title:  'Apache and PHP-FPM in Windows'
 date:   2017-11-11 13:14:15 +0100
 ---
 
-Last modified: {{ page.last_modified_at | date: '%A %d %B %Y at %R' }}
-
----
-
 We see _a lot_ of research over the internet to make Apache & PHP-FPM work on windows.
 
 But the first thing is: **there is no `php-fpm` on Windows**. And many people give up on this, because of too many or

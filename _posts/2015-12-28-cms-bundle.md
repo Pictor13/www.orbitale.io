@@ -4,10 +4,6 @@ title:  "CmsBundle"
 date:   2015-12-28 19:08:22 +0200
 ---
 
-Last modified: {{ page.last_modified_at | date: '%A %d %B %Y at %R' }}
-
----
-
 ## You've never seen a CMS so simple with Symfony.
 
 Simple Page+Category system. Deep urls.

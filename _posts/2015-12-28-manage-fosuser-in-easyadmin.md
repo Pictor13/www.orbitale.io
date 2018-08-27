@@ -4,9 +4,7 @@ title:  "Manage FOSUser in EasyAdmin"
 date:   2015-12-28 22:27:20 +0200
 ---
 
-Last modified: {{ page.last_modified_at | date: '%A %d %B %Y at %R' }}
-
----
+Last modified: 2018-08-27 09:56
 
 Edit (2018-08-27): FOSUserBundle is not the recommended way of managing users. If you want a nice user manager, please
 write it yourself to avoid FOSUser's inheritance and overriding hell. If you want a nice course about it, check out

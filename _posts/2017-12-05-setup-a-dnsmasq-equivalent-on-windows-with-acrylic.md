@@ -4,7 +4,7 @@ title:  'Setup a dnsmasq equivalent on Windows (with Acrylic)'
 date:   2017-12-05 15:37:59 +0100
 ---
 
-Last modified: {{ page.last_modified_at | date: '%A %d %B %Y at %R' }}
+Last modified: 2018-08-27 09:56
 
 Edit (2018-08-27): I stopped using Acrylic, it was quite unstable and was not working well. I probably messed up
 something in the configuration and I ended up using the `C:\Windows\System32\drivers\etc\hosts` file…<br>
