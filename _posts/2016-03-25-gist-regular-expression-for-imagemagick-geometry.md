@@ -4,6 +4,10 @@ title:  '[Gist] Regular expression for ImageMagick "Geometry"'
 date:   2016-03-25 10:12:43 +0200
 ---
 
+Last modified: {{ page.last_modified_at | date: '%A %d %B %Y at %R' }}
+
+---
+
 Some time ago, I created [ImageMagickPHP](https://github.com/Orbitale/ImageMagickPHP), a PHP library that allows you to
 create ImageMagick commands similar to what we can do in command line with
 [convert](http://www.imagemagick.org/script/convert.php) or [mogrify](http://www.imagemagick.org/script/mogrify.php)

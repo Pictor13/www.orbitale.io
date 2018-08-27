@@ -4,6 +4,10 @@ title:  "Doctrine tools"
 date:   2015-12-28 22:17:44 +0200
 ---
 
+Last modified: {{ page.last_modified_at | date: '%A %d %B %Y at %R' }}
+
+---
+
 Some useful tools to improve Doctrine ORM experience.
 
 ## New class: BaseEntityRepository

@@ -4,6 +4,10 @@ title:  "EasyImpress"
 date:   2015-12-28 18:48:24 +0200
 ---
 
+Last modified: {{ page.last_modified_at | date: '%A %d %B %Y at %R' }}
+
+---
+
 EasyImpress is a PHP application developed with Symfony framework, it allows you to realize beautiful 3D sliders using
 the powerful [Impress.js](https://github.com/bartaz/impress.js/) library.
 The demonstration is built with [EasyImpressBundle](https://github.com/Orbitale/EasyImpressBundle), which allow you to

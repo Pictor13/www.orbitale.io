@@ -4,6 +4,10 @@ title:  '[PHP Basics] Functions and methods prototypes'
 date:   2017-10-25 11:29:57 +0200
 ---
 
+Last modified: {{ page.last_modified_at | date: '%A %d %B %Y at %R' }}
+
+---
+
 A PHP function is made of three things:
 
 * Its code
