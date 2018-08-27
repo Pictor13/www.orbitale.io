@@ -325,7 +325,48 @@ $ heroku config:set APP_ENV=prod APP_SECRET=Wh4t3v3r
 
 ### Prepare the project for it to be compatible with Heroku
 
-First, we need to create a `Procfile`.
+First, we need to configure Nginx.
+
+#### Create an Nginx configuration
+
+Like any web application, we need a web server. Lucky we are: the PHP buildpack allow us to directly use Apache or Nginx!
+
+Let's create a `heroku/nginx_host.conf` and put this in it: 
+
+```
+# Try to serve file directly, fallback to rewrite.
+location / {
+    try_files $uri @rewriteapp;
+}
+
+# Rewrite all to index.php. This will trigger next location.
+location @rewriteapp {
+    rewrite ^(.*)$ /index.php/$1 last;
+}
+
+# Redirect everything to Heroku.
+# In development, replace this with your php-fpm/php-cgi proxy.
+location ~ ^/index\.php(/|$) {
+    try_files @heroku-fcgi @heroku-fcgi;
+    internal;
+}
+
+# Return 404 for all other php files not matching the front controller.
+# This prevents access to other php files you don't want to be accessible.
+location ~ \.php$ {
+    return 404;
+}
+```
+
+This config does many things:
+
+* Delivers the request file, if it exists.
+* Else, proxy the whole request to `index.php` which will be delegated to the FCGI provider configured by Heroku (which
+is a `php-fpm` process, in our case).
+* If another PHP fiel than `index.php` is asked by the client, we send a 404. This prevents any "vendor-like" php file
+to be executed or displayed.
+
+#### Create a `Procfile`.
 
 The `Procfile` is a file that describes all the different Dynos our project will use.
 
@@ -338,15 +379,22 @@ Each line contains two informations: the dyno name, that must be unique, and the
 
 `web` is the only special name, it is the only one receiving HTTP requests.
 
-The script will be the one provided by the PHP buildpack, a nginx process followed by the web entry point directory.
+The script will be the one provided by the PHP buildpack, an nginx process followed by the web entry point directory.
+
+We also have to inject the nginx configuration we wrote above, mandatory to use Symfony (else, only the homepage will
+show!).
 
 ```
-web: vendor/bin/heroku-php-nginx public/
+web: vendor/bin/heroku-php-nginx -C heroku/nginx_host.conf public/
 ```
 
 It's enough for Heroku to execute our code.
 
-You can also customize nginx and php-fpm configuration, but it's just about [reading the documentation](https://devcenter.heroku.com/articles/custom-php-settings), and we don't need it yet.
+You can also customize nginx and php-fpm configuration, and even completely override the whole nginx config (and not
+just the vhost like we did), but it's just about another option to specify in the `Procfile`, and we don't need it yet.
+
+In case you need it, [Heroku's documentation](https://devcenter.heroku.com/articles/custom-php-settings) will be of a
+good help to customize your nginx instance.
 
 ### Deploy the project on Heroku
 
