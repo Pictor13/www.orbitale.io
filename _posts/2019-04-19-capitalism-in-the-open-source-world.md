@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  'FOSS: the world of "new packages"'
+title:  'Capitalism in the open-source world'
 date:   2019-04-19 17:16:38 +0200
 ---
 
@@ -86,7 +86,7 @@ Yeah, refactoring is hard work, but:
 * When a new major version is almost ready, it is easier to call the community and ask for beta-testing it. Release a "release candidate" first, and ask a few people to require it & throw it on their already existing CI, and it should do the trick. But of course it only works for people that don't override too much of your package. Else, this point is, well... pointless.
 * Your package is popular. New version is better? Well, it will probably become more popular. Good point for you.
 
-## It's not just about "a library"
+## The "yet another new package" philosophy
 
 Something happened today: [a new "FlysystemBundle" was created](https://titouangalopin.com/introducing-the-official-flysystem-bundle/), and it is hosted on the PhpLeague Github organization.
 
@@ -149,6 +149,16 @@ What standards? K&R vs Allman indentation style? Rich models versus anemic model
 
 Some organizations have very strict coding styles, such as [Doctrine](https://github.com/doctrine/coding-standard), and [Symfony](https://symfony.com/doc/current/contributing/code/standards.html) too.
 
-Yet if some styles differ, most of the time it is a matter of taste, an "implementation detail". If the code acts well, is performant enough (benchamarks & profiling proving it) and features are flexible, what "standards" would you expect more?
+Yet if some styles differ, most of the time it is a matter of taste, an "implementation detail". If the code acts well, is performant enough (benchamarks & profiling proving it) and features are flexible, what "standards" would you expect more? 
+You could use tools like [PHPStan](https://phpstan.org/) or [Psalm](https://psalm.dev/docs/installation/) to have stronger coding standards.
 
-Standards are just things you _can_ follow if some problems occur in the organization process.
+Standards are things you _can_ follow if some problems occur in the organization process. If you're a library, standards will not be used the same way as if you are a triple-A framework, because the impact is not the same.
+
+But again, if you want to follow a standard, I don't think the maintainers from 1up-lab would have refused something "closer to Symfony standards" while being a Symfony bundle. 
+
+It is only a pull-request away.
+
+All of these statements could be true for this Flysystem bundle, and more important: they could be true for ANY package, actually.
+
+## It is not just about "a library", it goes abroad
+
