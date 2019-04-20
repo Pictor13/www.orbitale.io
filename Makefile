@@ -15,4 +15,4 @@ stop:
 	@echo "Stopped Jekyll"
 
 windows:
-	@echo "docker run --name=orbitale.io --detach -v %cd%:/srv/jekyll -v %cd%/vendor/bundle:/usr/local/bundle --publish=4000:4000 jekyll/jekyll:3.8 jekyll serve --watch >/dev/null"
+	@echo "docker run --name=orbitale.io --detach -v %cd%:/srv/jekyll -v %cd%/vendor/bundle:/usr/local/bundle --publish=4000:4000 jekyll/jekyll:3.8 jekyll serve --watch --force-polling"
