@@ -160,5 +160,109 @@ It is only a pull-request away.
 
 All of these statements could be true for this Flysystem bundle, and more important: they could be true for ANY package, actually.
 
-## It is not just about "a library", it goes abroad
+## It is not just about "a library", it goes way abroad
 
+I'm ranting about this because of a bigger problem.
+
+You shouldn't be surprised if I tell you that we are in a society of consumerism ruled by capitalism.
+
+Consume something, if you don't like it, go elsewhere, or do your own. And you **pay** for that. All the time.
+
+### The "past"
+
+The "do your own" was nice when "things" were not as advanced as today.
+
+Workers are being replaced by machines in factories for a good reason: it makes more "things" for less money and allows the boss to earn more money. This makes the worker go home or find another job.
+
+In the IT industry, like, 20-30 years ago, it was mostly about "do it yourself" because there was almost no documentation, no standard, and programming languages were a bit more cryptic than today. I remember my older brother reading a 200+ pages book in A4 format, filled with lines of code to copy on his own computer, just to code a simple game.
+
+Today it is about elitism.
+
+Workers are replaced by automated machines, and low-level developers are "replaced" with high-level programming interfaces. The problem is that the IT industry needs so many developers that we need to coach, train and educate, and many training centers claim to rise new developers in like 3-6 months. This is wrong, you don't make a developer in 6 months, at best you can make a nice junior developer, but not "a developer". All the missing experience and state of mind cannot be acquired in such a rush. Therefore, developers entering this industry are less skilled than the "old" ones. This makes sense, it is logical. But.
+
+What we experience is that older developers (the one with, let's say, more than 10 years of experience, a degree in computer science, or just a true passion and full-time + free time dedicated to programming) are so much more experienced than new developers, the gap is so big, that we can experience something like a "conflict of generation". This is also "normal" but it should not lead to issues such as [elitism on StackOverflow](https://stackoverflow.blog/2018/04/26/stack-overflow-isnt-very-welcoming-its-time-for-that-to-change/).
+
+### The "now"
+
+Well, elitism is everywhere now.
+
+Workers disappear, and high-skills jobs come upfront. But everybody needs these top-level jobs. But it's hard to find top-level candidates. Like the current airline pilot shortage, or the programmers shortage.
+
+Let me repeat this:
+
+Jobs that need less skills disappearing.
+
+This forces people with less skills to either struggle in the job market, or train themselves for a more elitist job. And this is not right, because I do not believe anyone can become a developer. At least, I think that not everyone can become an advanced developer. And our industry will suffer this in the next years, because it needs developers with good skills. Poor skills and projects go wrong, to say the least. Developers get sad, they leave after 1-3 years, and start over in another company. Until they eventually find a "better place".
+
+These companies consume developers as we use to consume.
+
+## Let's come back to the subject 
+
+FOSS is about consuming free software. Free. So we can do whatever we want with it.
+
+But the best of FOSS is the **spirit of sharing**. You share, you discuss, debate, contribute, benefit and so on.
+
+Sharing is not something that is really considered as a main value in the world of capitalism.
+
+The values in capitalism are things that bring more profit.
+
+FOSS's profit is not financial profit, it's more about sharing tools that are useful for people. It's more a **communautary profit**. 
+
+But not only.
+
+### Ego
+
+[We're only human, after all](https://www.youtube.com/watch?v=L3wKzyIN1yk).
+
+But I feel like sometimes, ego predomines all.
+
+As said above, with FOSS there are two strategies: refactor, or recreate.
+
+Capitalism would say "recreate and sell". Of course, FOSS can't sell that much. So we end up with ego, the main source of men's satisfaction.
+
+(I'm talking about men and not women because I feel like women are not really that much into ego especially in the FOSS world, mostly because IT is unfortunately 95% men and women are a minority, and most of them suffer because of this situation, but that's not the subject.)
+
+A men's satisfaction can come in many shapes, but in softwares industry, ego comes with how much you're considered an "authority" in your field of expertise.
+
+A simple example: become a Symfony developer, get skills with it, contribute to the Symfony framework with one or two features, and you can be considered by many as a form of "authority".
+
+Theoretically, anyone could contribute to such framework. That's what some core team members say in their conferences, for example, and they're right in many subjects: follow the guide, ask for help, and anyone could contribute.
+
+Yes, but no.
+
+Not everyone is involved in open-source as much as the Symfony core team or other contributors. Some people are passionate about the subject, and some other just don't care as long as they can get their wage. I know my older brother who's also in IT is not really interested as long as he can still do his job 8 hours a day and come back home and just don't care about it. That's fine, he's just out of the FOSS world, but he can still be a good developer (he's an architect actually, but he's also a developer, well).
+
+Many devs are in the _grey zone_, meaning they are interested in open-source but they don't contribute nor participate very much, mostly because they don't find time.
+
+And I'm saying _"They don't find time"_. Most of the time, we **can** find time to work on an open-source project, but many devs will never do it at work because their boss disagrees (and I wish their boss could agree), or because they don't want to go back to code after they finish their job (or they can't, if they have family and kids, or already have other hobbies). Sometimes they're afraid to contribute, too.
+
+So there's basic elitism in saying things like _"If you don't like it, do your own"_, because **not everyone can**.
+
+### Not everyone can, hence a paradox
+
+It is the main paradox in FOSS to me:
+
+* You share free tools for good and for the community
+* Anyone can do whatever they like (in the limits of the license)
+* If they do, you'll discuss and hopefully end up with a consensus and improve your library for the good and the community
+* But if this "anyone" does not suit your personal feelings about how to contribute, you just let them f*ck off.
+
+And the last point is the most important, because it can even be triggered _before_ any contribution.
+
+You don't like the person who made a very popular package? Let's fork it and promote your own work. Ego fight.
+
+If you say "competition is nice" you are totally in to capitalism.
+
+Competition is interesting when there are benefits on both (or more) sides of the competition.
+
+For example, Laravel vs Symfony is a nice competition because they have a totally different philosophy, and both can benefit from the other in order to bring new features. For example, Laravel borrows tons of things from Symfony by using its components, and Symfony introduced a few features from Laravel in the past (like the `dd()` function, or testing assertions inspired by Laravel Dusk). This is a sane competition, when looking at frameworks of course (it becomes less sane when looking at human beings...).
+
+A competition between Package A and B, one being the fork or a rewrite of another, is not really sane, because you end up with 2 packages doing the exact same thing, and only popularity will win. Nobody ever created a fork of Twig in order to "optimize" it. No. Twig was just optimized. And rewritten a bit, maybe.
+
+Here, I'm talking about a concept: a package that does the same thing than its competitor, but is claimed to "be better".
+
+To me it is pure ego to just rewrite it and claim it's better without having contributed to the first one.
+
+This is not free open-source software.<br>
+This is ego.<br>
+This is capitalism.
