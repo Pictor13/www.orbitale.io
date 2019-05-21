@@ -4,6 +4,8 @@ title:  'Capitalism in the open-source world'
 date:   2019-04-19 17:16:38 +0200
 ---
 
+Last modified: 2019-05-21 12:38
+
 A good representation of how the capitalism spirit can be introduced in FOSS:
  
 **Reinvent the wheel, but "better".**
@@ -61,6 +63,14 @@ Some disadvantages though:
 * It won't be as battle-tested as the popular one, so you will likely have a big maintenance to do, and will need much time to implement new features because of the lack of community.
 
 There are also more reasons why I think it is a bad idea. I talk about this below (did I say that this post is subjective?).
+
+However, to play the devil's advocate against my own arguments, I have at least one good example of a rebuilt package:<br>
+[Swiftmailer](https://swiftmailer.symfony.com/).<br>
+The package uses so many old and bad practices that even if it works well, its "design flaws" prevent some new usages of what a "mailer" lib should have (async, only HTTP calls instead of SMTP, better and easier API and configuration, etc.).
+
+These are the reasons why it is completely rewritten into [Symfony Mailer](https://github.com/symfony/mailer).
+There is no migration path because the change is so big that there can be no clean migration path, at least not without many years of wait and maintenance.
+To me, rewriting Swiftmailer from scratch was a perfect solution. And since the maintainers of Swiftmailer and Symfony Mailer are the same, there's no competition at all: same feature but "better", but same people, and entirely new things. Symfony Mailer is not Swiftmailer. It is something new.
 
 ## Refactor it
 
@@ -141,6 +151,8 @@ Yes, "better code" you could have just optimized in the original repo.
 
 "(...) of Symfony 4.2 features" you could have supported on either an automated way of doing it (detect Symfony version & use feature), or you could also have dropped support for older versions with a new major version (again, Semver FTW).
 
+As a nice example related to Flysystem's bundle, the only new feature in the new bundle is something that took me one single hour of work & tests & checks and I submitted them [in this PR](https://github.com/1up-lab/OneupFlysystemBundle/pull/190), and it was accepted. One hour, and everyone gets the "very shinier feature, such wow" that is promoted elsewhere.
+
 There is no real argument in here, only things that could probably have cost way less by just helping the original package.
 
 ### "Follows standards of Symfony and Flysystem communities."
@@ -156,7 +168,9 @@ Standards are things you _can_ follow if some problems occur in the organization
 
 But again, if you want to follow a standard, I don't think the maintainers from 1up-lab would have refused something "closer to Symfony standards" while being a Symfony bundle. 
 
-It is only a pull-request away.
+After all, [they are working on CS fixes](https://github.com/1up-lab/OneupFlysystemBundle/pull/191), and anybody could discuss. And by the way, the original author of the new FlysystemBundle [never opened any issue to discuss with the community](https://github.com/1up-lab/OneupFlysystemBundle/issues?utf8=%E2%9C%93&q=author%3Atgalopin) about a new integration with new standards and stuff. Click the link: never.
+
+A feature is only a pull-request away.
 
 All of these statements could be true for this Flysystem bundle, and more important: they could be true for ANY package, actually.
 
@@ -188,13 +202,15 @@ Well, elitism is everywhere now.
 
 Workers disappear, and high-skills jobs come upfront. But everybody needs these top-level jobs. But it's hard to find top-level candidates. Like the current airline pilot shortage, or the programmers shortage.
 
+We need "high skills" everywhere, and lesser amount of skills is not really acceptable, because stacks continue to become more and more complex (docker, kubernetes, async, APIs, micro-services, etc.). In the past we had the "integrator", "sysadmin", "dev", "UX designer". Now we have _"devops that do everything because it's so cool to have a full-stack-ninja-jedi-that-plays-foosball-in-the-office-and-drinks-beer-and-eats-pizza"_ or anything that people tend to write in their job offers just because they struggle while searching for developers. 
+
 Let me repeat this:
 
-Jobs that need less skills disappearing.
+Jobs that need less skills are disappearing.
 
 This forces people with less skills to either struggle in the job market, or train themselves for a more elitist job. And this is not right, because I do not believe anyone can become a developer. At least, I think that not everyone can become an advanced developer. And our industry will suffer this in the next years, because it needs developers with good skills. Poor skills and projects go wrong, to say the least. Developers get sad, they leave after 1-3 years, and start over in another company. Until they eventually find a "better place".
 
-These companies consume developers as we use to consume.
+These companies consume developers as we use to consume "things".
 
 ## Let's come back to the subject 
 
@@ -208,13 +224,15 @@ The values in capitalism are things that bring more profit.
 
 FOSS's profit is not financial profit, it's more about sharing tools that are useful for people. It's more a **communautary profit**. 
 
-But not only.
+In its roots, **free open-source software is humanism**.
+
+But not only. At least, this is what I fear:
 
 ### Ego
 
 [We're only human, after all](https://www.youtube.com/watch?v=L3wKzyIN1yk).
 
-But I feel like sometimes, ego predomines all.
+But I feel like sometimes (more like "often", yeah, this post is subjective), ego predomines all.
 
 As said above, with FOSS there are two strategies: refactor, or recreate.
 
@@ -222,9 +240,9 @@ Capitalism would say "recreate and sell". Of course, FOSS can't sell that much. 
 
 (I'm talking about men and not women because I feel like women are not really that much into ego especially in the FOSS world, mostly because IT is unfortunately 95% men and women are a minority, and most of them suffer because of this situation, but that's not the subject.)
 
-A men's satisfaction can come in many shapes, but in softwares industry, ego comes with how much you're considered an "authority" in your field of expertise.
+A man's satisfaction can come in many shapes, but in softwares industry, ego comes with how much you're considered an "authority" in your field of expertise.
 
-A simple example: become a Symfony developer, get skills with it, contribute to the Symfony framework with one or two features, and you can be considered by many as a form of "authority".
+A simple example: become a Symfony developer, get skills with it, contribute to the Symfony framework with one or two features, and you can be considered by many as a form of "authority". Some few advanced skills and you can trigger other devs' impostor syndrome.
 
 Theoretically, anyone could contribute to such framework. That's what some core team members say in their conferences, for example, and they're right in many subjects: follow the guide, ask for help, and anyone could contribute.
 
@@ -244,24 +262,26 @@ It is the main paradox in FOSS to me:
 
 * You share free tools for good and for the community
 * Anyone can do whatever they like (in the limits of the license)
-* If they do, you'll discuss and hopefully end up with a consensus and improve your library for the good and the community
+* If they do want to contribute, you'll discuss and hopefully end up with a consensus and improve your library for the good and the community
 * But if this "anyone" does not suit your personal feelings about how to contribute, you just let them f*ck off.
 
 And the last point is the most important, because it can even be triggered _before_ any contribution.
 
 You don't like the person who made a very popular package? Let's fork it and promote your own work. Ego fight.
 
+Some maintainer doesn't like your idea, or worse, doesn't like you? They'll just remove your contribution, do it themselves and promote their work. 
+
 If you say "competition is nice" you are totally in to capitalism.
 
 Competition is interesting when there are benefits on both (or more) sides of the competition.
 
-For example, Laravel vs Symfony is a nice competition because they have a totally different philosophy, and both can benefit from the other in order to bring new features. For example, Laravel borrows tons of things from Symfony by using its components, and Symfony introduced a few features from Laravel in the past (like the `dd()` function, or testing assertions inspired by Laravel Dusk). This is a sane competition, when looking at frameworks of course (it becomes less sane when looking at human beings...).
+For example, Laravel vs Symfony is a nice competition because they have a totally different philosophy, and both can benefit from the other in order to bring new features. For example, Laravel borrows tons of things from Symfony by using its components, and Symfony introduced a few features from Laravel in the past (like the `dd()` function, or testing assertions inspired by Laravel Dusk). This is a sane competition, when looking at these frameworks at least (it becomes less sane when looking at human beings...).
 
 A competition between Package A and B, one being the fork or a rewrite of another, is not really sane, because you end up with 2 packages doing the exact same thing, and only popularity will win. Nobody ever created a fork of Twig in order to "optimize" it. No. Twig was just optimized. And rewritten a bit, maybe.
 
 Here, I'm talking about a concept: a package that does the same thing than its competitor, but is claimed to "be better".
 
-To me it is pure ego to just rewrite it and claim it's better without having contributed to the first one.
+To me it is pure ego to just rewrite the original package and claim the new one is "better" without having contributed to the first one, and did not even started discussing.
 
 This is not free open-source software.<br>
 This is ego.<br>
