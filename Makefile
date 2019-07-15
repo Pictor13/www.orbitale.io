@@ -1,18 +1,27 @@
-JEKYLL_VERSION         = 3.8
-serve: stop
-	@docker run --name=orbitale.io \
-		--detach \
-		-v `pwd`:/srv/jekyll \
-		-v `pwd`/vendor/bundle:/usr/local/bundle \
-		--publish=4000:4000 \
-		jekyll/jekyll:$(JEKYLL_VERSION) \
-		jekyll serve --watch \
-		>/dev/null
-	@echo "Listening to http://127.0.0.1:4000"
+##Available commands:
 
-stop:
-	-@docker rm -f orbitale.io >/dev/null 2>&1
-	@echo "Stopped Jekyll"
+##
+## Default
+## -------
+##
 
-windows:
-	@echo "docker run --name=orbitale.io --detach -v %cd%:/srv/jekyll -v %cd%/vendor/bundle:/usr/local/bundle --publish=4000:4000 jekyll/jekyll:3.8 jekyll serve --watch --force-polling"
+.DEFAULT_GOAL := help
+help: ## Show this help message
+	@grep -E '(^[a-zA-Z_-]+:.*?##.*$$)|(^##)' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[32m%-15s\033[0m %s\n", $$1, $$2}' | sed -e 's/\[32m##/[33m/'
+.PHONY: help
+
+##
+## Project
+## -------
+##
+
+install: ## Install dependencies
+	docker-compose run -it --rm jekyll bundle install
+
+start: ## Start the project
+	docker-compose up -d
+
+stop: ## Stop the project
+	docker-compose down
+
+restart: stop start ## Restart the project
