@@ -152,3 +152,6 @@ class Row extends AbstractStyle
   * We can retrieve the `OptionsResolver` programmatically and use it to generate a base documentation.
 * **Cons:**
   * Still an array of options
+
+**Bottom note:** If you ask me why I don't contribute to PHPWord, well, refactoring an entire codebase with something like that is a huge task, and this post is mostly here for demonstration.
+I'm not saying PHPWord is bad. It's good and I use it because it's good.
