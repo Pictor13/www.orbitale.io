@@ -4,8 +4,8 @@ title:  'Array options: a solution with Symfony OptionResolver'
 date:   2019-08-18 07:30:42 -0500
 ---
 
-I have to use the PHPWord library to generate a docx file with 748 pages with a very specific page format, and tons of other requirements.
-And you know what?
+I have to use the PHPWord library to generate a docx file with 748 pages with a very specific page format, and tons of other requirements.<br>
+And you know what?<br>
 So far, it's just "nice" but "boring".
 
 ## A story about "array options"
@@ -30,15 +30,14 @@ What I encounter most of the time is the lack of documentation for these options
 
 [![Array options hell](/img/array_options_hell.png)](/img/array_options_hell.png)
 
-**Pros:**
-    * When you **read** this, it's obvious what it does. 
-    * Great for readability.
-
-**Cons:**
-    * When you **code** this, you have to open the documentation, and (hopefully) options will be documented (if you're lucky). And most of the time, documentation ends up being like `option_a: does something`, and that's all (okay, I might be exaggerating a bit on this).
-    * No static analysis can help us know what options are available, unless there's strict validation in the lib (which there almost never is), like with Symfony's OptionsResolver component suggested above.
-    * When an option changes in the library, you will never know automatically.
-    * There's no auto-completion, and no IDE can implement auto-completion for such thing without a **reference document**. That's why XML config is nice for example: we can have an XSD file to store all options, their description, and automatically document all the things, and the XSD will follow the lib's releases, therefore any IDE with XML support (which means **almost all IDEs**) will automatically show you that the options may be invalid.
+* **Pros:**
+  * When you **read** this, it's obvious what it does. 
+  * Great for readability.
+* **Cons:**
+  * When you **code** this, you have to open the documentation, and (hopefully) options will be documented (if you're lucky). And most of the time, documentation ends up being like `option_a: does something`, and that's all (okay, I might be exaggerating a bit on this).
+  * No static analysis can help us know what options are available, unless there's strict validation in the lib (which there almost never is), like with Symfony's OptionsResolver component suggested above.
+  * When an option changes in the library, you will never know automatically.
+  * There's no auto-completion, and no IDE can implement auto-completion for such thing without a **reference document**. That's why XML config is nice for example: we can have an XSD file to store all options, their description, and automatically document all the things, and the XSD will follow the lib's releases, therefore any IDE with XML support (which means **almost all IDEs**) will automatically show you that the options may be invalid.
 
 And there are probably more cons.
 
@@ -153,5 +152,5 @@ class Row extends AbstractStyle
 * **Cons:**
   * Still an array of options
 
-**Bottom note:** If you ask me why I don't contribute to PHPWord, well, refactoring an entire codebase with something like that is a huge task, and this post is mostly here for demonstration.
+> **Bottom note:** If you ask me why I don't contribute to PHPWord, well, refactoring an entire codebase with something like that is a huge task, and this post is mostly here for demonstration.
 I'm not saying PHPWord is bad. It's good and I use it because it's good.
