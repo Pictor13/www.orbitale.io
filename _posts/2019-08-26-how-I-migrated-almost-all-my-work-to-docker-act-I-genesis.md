@@ -13,9 +13,14 @@ So here's a small (or not) post about Docker.
 If you want to read the others, please refer to this index:
 
 * Act I (current)
+* Act II (next week)
+* Act III (in 2 weeks)
+* Act IV (in 3 weeks)
+<!--
 * [Act II](/2019/09/02/how-I-migrated-almost-all-my-work-to-docker-act-II.html)
 * [Act III](/2019/09/09/how-I-migrated-almost-all-my-work-to-docker-act-III-services.html)
 * [Act IV](/2019/09/16/how-I-migrated-almost-all-my-work-to-docker-act-IV-compose.html)
+-->
 
 ## A long time ago, on a computer far far away...
 
