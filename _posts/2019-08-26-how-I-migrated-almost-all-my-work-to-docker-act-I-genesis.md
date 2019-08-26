@@ -12,12 +12,12 @@ So here's a small (or not) post about Docker.
 
 If you want to read the others, please refer to this index:
 
-* Act I (current)
-* Act II (next week)
-* Act III (in 2 weeks)
-* Act IV (in 3 weeks)
+* Act I: Genesis (current)
+* Act II: PHP (next week)
+* Act III: Services (in 2 weeks)
+* Act IV: Project (in 3 weeks)
 
-[//]: * [Act II](/2019/09/02/how-I-migrated-almost-all-my-work-to-docker-act-II.html)
+[//]: * [Act II](/2019/09/02/how-I-migrated-almost-all-my-work-to-docker-act-II-php.html)
 [//]: * [Act III](/2019/09/09/how-I-migrated-almost-all-my-work-to-docker-act-III-services.html)
 [//]: * [Act IV](/2019/09/16/how-I-migrated-almost-all-my-work-to-docker-act-IV-compose.html)
 
