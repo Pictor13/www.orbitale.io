@@ -4,7 +4,7 @@ title:  'How I migrated almost all my work to Docker Act I: genesis'
 date:   2019-08-26 10:00:00 +0200
 ---
 
-This post is the first of a series of three posts about how I started to used Docker for all my projects.
+This post is the first of a series of four posts about how I started to used Docker for all my projects.
 
 I made some tweets a while ago talking about [Docker](https://www.docker.com/), and I must say that I'm a bit afraid that they get lost in an endless timeline.
 
