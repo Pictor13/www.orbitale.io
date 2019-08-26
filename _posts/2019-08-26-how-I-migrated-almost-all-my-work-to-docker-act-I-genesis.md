@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  'How I migrated almost all my work to Docker Act I: genesis'
-date:   2019-08-26 10:00:00 +0100
+date:   2019-08-26 10:00:00 +0200
 ---
 
 This post is the first of a series of three posts about how I started to used Docker for all my projects.
@@ -16,11 +16,10 @@ If you want to read the others, please refer to this index:
 * Act II (next week)
 * Act III (in 2 weeks)
 * Act IV (in 3 weeks)
-<!--
-* [Act II](/2019/09/02/how-I-migrated-almost-all-my-work-to-docker-act-II.html)
-* [Act III](/2019/09/09/how-I-migrated-almost-all-my-work-to-docker-act-III-services.html)
-* [Act IV](/2019/09/16/how-I-migrated-almost-all-my-work-to-docker-act-IV-compose.html)
--->
+
+[//]: * [Act II](/2019/09/02/how-I-migrated-almost-all-my-work-to-docker-act-II.html)
+[//]: * [Act III](/2019/09/09/how-I-migrated-almost-all-my-work-to-docker-act-III-services.html)
+[//]: * [Act IV](/2019/09/16/how-I-migrated-almost-all-my-work-to-docker-act-IV-compose.html)
 
 ## A long time ago, on a computer far far away...
 
