@@ -111,7 +111,7 @@ $ docker exec redis redis-cli get my_key
 any_value
 ```
 
-## Others...
+## Others...
 
 You can also use mailcatcher, RabbitMQ, mongodb...
 
@@ -124,7 +124,7 @@ Almost every service you already know can be used with this method.
 * You have to create new containers if you have several apps, or you must use the same container, which can conflict (for example when you use the same keys in Redis in different apps).
 * Persistent storages may need more configuration (volumes, mounts, delegates...).
 
-## Advantage of all these new containers
+## Advantage of all these new containers
 
 * We can start and stop them with `docker start postgres` or `docker stop postgres`.
 * As long as we don't touch anything on the container (recreate/remove/etc), the data in it will be kept between starts and stops.
