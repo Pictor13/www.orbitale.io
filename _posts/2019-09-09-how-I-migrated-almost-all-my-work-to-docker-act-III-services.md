@@ -44,7 +44,7 @@ Well, it depends on your OS, on the way it is installed, on its version, and can
 
 Now, let me show you how we can run a MySQL server with one single command using Docker:
 
-```shell script
+```
 docker run --name=mysql -dit -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 mysql:5.7
 ```
 
