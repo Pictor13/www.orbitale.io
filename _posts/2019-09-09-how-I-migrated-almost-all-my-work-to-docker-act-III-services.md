@@ -1,8 +1,7 @@
-
 ---
 layout: post
 title:  'How I migrated almost all my work to Docker Act III: services'
-date:   2019-09-09 10:00:00 +0100
+date:   2019-09-09 10:00:00 +0200
 ---
 
 This post is the third of a series of four posts about how I started to used Docker for all my projects.
