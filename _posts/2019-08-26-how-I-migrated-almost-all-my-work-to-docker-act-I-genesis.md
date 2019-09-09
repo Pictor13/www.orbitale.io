@@ -14,10 +14,9 @@ If you want to read the others, please refer to this index:
 
 * Act I: Genesis (current)
 * [Act II: PHP](/2019/09/02/how-I-migrated-almost-all-my-work-to-docker-act-II-php.html)
-* Act III: Services (next week)
-* Act IV: Project (in 2 weeks)
+* [Act III: Services](/2019/09/09/how-I-migrated-almost-all-my-work-to-docker-act-III-services.html)
+* Act IV: Project (next week)
 
-[//]: * [Act III: Services](/2019/09/09/how-I-migrated-almost-all-my-work-to-docker-act-III-services.html)
 [//]: * [Act IV: Project](/2019/09/16/how-I-migrated-almost-all-my-work-to-docker-act-IV-compose.html)
 
 ## A long time ago, on a computer far far away...
