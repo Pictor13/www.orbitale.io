@@ -9,11 +9,10 @@ This post is the second of a series of three posts about how I started to used D
 If you have not read the other ones, you may give them a go before reading this one:
 
 * [Act I: Genesis](/2019/08/26/how-I-migrated-almost-all-my-work-to-docker-act-I-genesis.html)
-* Act II (current)
-* Act III: Services (next week)
-* Act IV: Project (in 2 weeks)
+* Act II: PHP (current)
+* [Act III: Services](/2019/09/09/how-I-migrated-almost-all-my-work-to-docker-act-III-services.html)
+* Act IV: Project (next week)
 
-[//]: * [Act III: Services](/2019/09/09/how-I-migrated-almost-all-my-work-to-docker-act-III-services.html)
 [//]: * [Act IV: Project](/2019/09/16/how-I-migrated-almost-all-my-work-to-docker-act-IV-compose.html)
 
 ## Reminder of previous post
