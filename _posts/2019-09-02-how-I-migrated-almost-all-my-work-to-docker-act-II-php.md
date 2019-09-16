@@ -11,9 +11,7 @@ If you have not read the other ones, you may give them a go before reading this 
 * [Act I: Genesis](/2019/08/26/how-I-migrated-almost-all-my-work-to-docker-act-I-genesis.html)
 * Act II: PHP (current)
 * [Act III: Services](/2019/09/09/how-I-migrated-almost-all-my-work-to-docker-act-III-services.html)
-* Act IV: Project (next week)
-
-[//]: * [Act IV: Project](/2019/09/16/how-I-migrated-almost-all-my-work-to-docker-act-IV-compose.html)
+* [Act IV: Project](/2019/09/16/how-I-migrated-almost-all-my-work-to-docker-act-IV-compose.html)
 
 ## Reminder of previous post
 
