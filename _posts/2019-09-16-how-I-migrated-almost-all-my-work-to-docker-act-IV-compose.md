@@ -43,7 +43,7 @@ version: '3'
 services:
     php: # Here will come something
 
-    database: # Something else here
+    database: # Something else here
 
     http: # And here something else again.
 ```
@@ -52,7 +52,7 @@ services:
 > Please be aware that **any container that will touch your files must handle permissions correctly**. Therefore, for any service you create that may have a shared volume with your machine, you **must** create a base Docker image and use the proposed hack to make sure permissions are handled correctly.
 > Of course, as the hack I added to this post is focused on `php-fpm`, you must adapt it to the script you need to run, be it nodejs, mysql or anything.
 
-### PHP
+### PHP
 
 Your PHP container will need an image, as it will certainly modify your files, and of course you will need a specific PHP configuration or additional extensions.
 
