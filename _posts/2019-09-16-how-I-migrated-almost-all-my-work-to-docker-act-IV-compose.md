@@ -1,16 +1,16 @@
 ---
 layout: post
 title:  'How I migrated almost all my work to Docker Act IV: Compose'
-date:   2019-09-16 10:00:00 +0100
+date:   2019-09-16 10:00:00 +0200
 ---
 
 This post is the last one of a series of four posts about how I dockerized all my projects.
 
 If you have not read the other ones, you may give them a go before reading this one:
 
-* [Act I](/2019/08/26/how-I-migrated-almost-all-my-work-to-docker-act-I-genesis.html)
-* [Act II](/2019/09/02/how-I-migrated-almost-all-my-work-to-docker-act-II.html)
-* [Act III](/2019/09/09/how-I-migrated-almost-all-my-work-to-docker-act-III-services.html)
+* [Act I: Genesis](/2019/08/26/how-I-migrated-almost-all-my-work-to-docker-act-I-genesis.html)
+* [Act II: PHP](/2019/09/02/how-I-migrated-almost-all-my-work-to-docker-act-II-php.html)
+* [Act III: Services](/2019/09/09/how-I-migrated-almost-all-my-work-to-docker-act-III-services.html)
 * Act IV (current)
 
 ## Reminder of previous posts
