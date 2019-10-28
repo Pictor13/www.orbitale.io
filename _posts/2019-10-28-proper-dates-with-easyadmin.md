@@ -36,8 +36,7 @@ Check that you have a running database, whatever kind you want (mysql, postgresq
 Then, we must create an entity. Let's go for an `Event` class, as if we were recreating a [Mobilizon](https://framagit.org/framasoft/mobilizon)-like platform:
 
 ```
-bin/console make:entity Event
-make:entity Event
+$ bin/console make:entity Event
 
  created: src/Entity/Event.php
  created: src/Repository/EventRepository.php
