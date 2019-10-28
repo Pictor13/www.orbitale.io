@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  'What is a Controller?'
-date:   2019-07-19 02:01:09 -0500
+date:   2019-07-19 02:01:09 +0200
 ---
 
 In the programming industry we often bang our heads on walls by talking about things instead of coding. Like "best practices", "best language", "best IDE", etc.
