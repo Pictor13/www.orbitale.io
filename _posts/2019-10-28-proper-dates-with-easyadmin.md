@@ -143,7 +143,7 @@ easy_admin:
                       type: datetime
                       # Add these fields
                       type_options:
-                          # The frontend-size timezone
+                          # The frontend-side timezone
                           view_timezone: Europe/Paris
 
                           # The timezone that will be stored in the database
