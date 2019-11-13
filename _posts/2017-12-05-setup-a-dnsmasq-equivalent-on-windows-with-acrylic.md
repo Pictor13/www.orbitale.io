@@ -6,7 +6,7 @@ date:   2017-12-05 15:37:59 +0100
 
 Last modified: 2018-08-27 09:56
 
-*Edit (2018-08-27)*: *I stopped using Acrylic*, it was quite unstable and was not working well. I probably messed up
+**Edit (2018-08-27)**: **I stopped using Acrylic**, it was quite unstable and was not working well. I probably messed up
 something in the configuration and I ended up using the `C:\Windows\System32\drivers\etc\hosts` file...
 
 The problem I had was that the DNS worked for my own domains but it did not for **all** others. I could not even open
