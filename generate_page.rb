@@ -2,7 +2,7 @@
 
 title = ARGV[0]
 
-if !title
+unless title
     loop do
         print "\nTitle ? > "
         title = gets.chomp
