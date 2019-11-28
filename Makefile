@@ -26,5 +26,9 @@ stop: ## Stop the project
 
 restart: stop start ## Restart the project
 
+build: ## Build the website
+	docker-compose exec jekyll jekyll build
+
+
 new: start ## Create a new blog post
 	docker-compose exec jekyll ruby generate_page.rb
