@@ -4,14 +4,11 @@ title:  'Deploy a Symfony Flex project on Heroku'
 date:   2018-01-05 15:51:59 +0100
 ---
 
-Last modified: 2018-08-27 09:56
+> Last modified: 2018-08-27 09:56
 
-**Note:** This article is just a personal translation of another article I wrote on the
-[AFSY website](https://afsy.fr/avent/2017/03-deployer-un-projet-symfony-flex-sur-heroku), originally in French, that was published when they organized an Advent calendar with various other cool PHP/Symfony developers!
+>**Note:** This article is translation of another article I wrote on the [AFSY website](https://afsy.fr/avent/2017/03-deployer-un-projet-symfony-flex-sur-heroku), originally in French, that was published when they organized an Advent calendar with various other cool PHP/Symfony developers!
 
-# Deploy a Symfony Flex project on Heroku
-
-We well talk about three subjects here:
+We will talk about three subjects here:
 
 * What is Flex?
 * Heroku, what's that?
