@@ -4,6 +4,10 @@ title:  "I'm going (free)lance!"
 date:   2020-03-06 09:00:00 +0200
 ---
 
+Last modified: 2020-03-15 20:01
+
+TL;DR: **Want to work with me? Check out my services on [alex-rock.tech](https://alex-rock.tech/en) :)**
+
 ## A bit of lore
 
 I've been a programmer in the IT industry since 2011, started using PHP in 2008, learnt tiny bits of C++ in 2005 and 2006 at my high school's "computer club", coded RPG-Maker scripts between 2000 and 2003 (around that) and wrote my first lines of code around 1996 in BASIC to display multiplication tables with a single number as input, with the help of my older brother.
@@ -34,7 +38,7 @@ So, to compensate this, **I'm going freelance**.
 
 I've been thinking about making this big step for years, and now my situation needs it, so...
 
-If you want us to collaborate, hire me at [alex@orbitale.io](alex@orbitale.io) :)
+**If you want us to collaborate, hire me at [alex-rock.tech](https://alex-rock.tech/en) :)**
 
 Here's the latest version of my presentation:
 
