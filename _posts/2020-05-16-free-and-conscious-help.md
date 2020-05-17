@@ -10,7 +10,7 @@ I recently stumbled upon a reddit thread talking about how "bad" it is supposed 
 
 The goal of this funding seems to be that Nuno makes his package available only to people that fund him, but when funding reaches a top goal, it will be open-source for everyone. Correct me if I am wrong (please).
 
-I sincerely do not really know what to say about this. After all, if [Nuno Maduro](https://nunomaduro.com/) (which I met once and he's a really nice person), the author of Pest PHP, wants to fund his project so it can pay his bills and at the same time allow a new project to become open-source one day, let's do it, I will not mind nor rant about this.
+I sincerely do not really know what to say about this (well, I actually do, hence this post). After all, if [Nuno Maduro](https://nunomaduro.com/) (which I met once and he's a really nice person), the author of Pest PHP, wants to fund his project so it can pay his bills and at the same time allow a new project to become open-source one day, let's do it, I will not mind nor rant about this.
 
 However, maybe you have read the title of this post before actually reading it (else, tell me, I definitely like weirdos like me), it makes me think about something that I try my best to have in my life but which is really hard to achieve.
 
