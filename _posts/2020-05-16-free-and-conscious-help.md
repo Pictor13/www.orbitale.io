@@ -176,7 +176,7 @@ This person seem to think that funding a free and open-source tool for $14 per m
 
 Okay, let's talk about numbers now.
 
-I do not know how much Nuno is paid by his current employer right now (Algolia, IIRC), but I guess a pretty good amount, considering his skills and the type of company.<br>
+I do not know how much Nuno is paid by his current employer right now, but I guess a nice amount, considering his skills and the type of company.<br>
 I will take an arbitrary value, just to imagine.
 
 If he was paid $3000 per month, this would result into $18 per hour (approximately, of course).
