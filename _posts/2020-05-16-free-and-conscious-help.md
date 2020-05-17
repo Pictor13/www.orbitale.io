@@ -102,7 +102,7 @@ Jet set rich people will find it really important to spend millions in a collect
 
 **The price of something depends only on how much the society you live in evaluates it.**
 
-This representation is the precise reason why we laugh at Wall-E when he (yes, **he**, not **it**) throws away the wedding ring and keeps the ring box.<br>
+This representation is the precise reason why we laugh at Wall-E when he throws away the wedding ring and keeps the ring box.<br>
 Because we think that Wall-E is stupid to throw something that has "so much value" and keep an "undervalued" item.<br>
 Think about it.
 
