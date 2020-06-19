@@ -12,7 +12,7 @@ Not ghosts, no.
 
 I'm talking about tests.
 
-And most ofte, when we talk about tests, we see this kind of thing:
+And most often, when we talk about tests, we see this kind of thing:
 
 ```php
 class Math
